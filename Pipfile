@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+tensorflow = "==2.*"
+black = "==19.10b"
+numpy = "*"
+scikit-learn = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+datasets = "pipenv run python -m tf_listnet.datasets"
+train = "pipenv run python -m tf_listnet.trainer"
